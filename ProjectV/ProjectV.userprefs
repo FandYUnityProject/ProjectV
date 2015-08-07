@@ -1,0 +1,31 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/UI/continueButtonScript.cs">
+    <Files>
+      <File FileName="Assets/scripts/Setting/SaveData/SaveData.cs" Line="17" Column="2" />
+      <File FileName="../../Unity-Scripts/Scripts/Setting/SceanChange/sceanChange.cs" Line="27" Column="5" />
+      <File FileName="Assets/scripts/UI/continueButtonScript.cs" Line="17" Column="26" />
+      <File FileName="Assets/scripts/UI/startButtonScript.cs" Line="22" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="scripts" expanded="True">
+              <Node name="Setting" expanded="True">
+                <Node name="SaveData" expanded="True" />
+              </Node>
+              <Node name="UI" expanded="True">
+                <Node name="continueButtonScript.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
