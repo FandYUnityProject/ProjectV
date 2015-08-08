@@ -42,6 +42,6 @@ public class MoveController : MonoBehaviour {
 
 	void Move(float horizontalMove){
 		Vector2 movement = new Vector2(horizontalMove,0).normalized;
-		GetComponent<Rigidbody2D> ().velocity = movement * speed;
+		rb.velocity = movement * speed;
 	}
 }
