@@ -113,13 +113,13 @@ public class moveMapRockman : MonoBehaviour {
 	}
 
 	void MoveLeftScreen(){
-		mainCamera.transform.position -= new Vector3(mapWidth,0f,0f);
+		mainCamera.transform.position -= new Vector3(mapWidth+4f,0f,0f);
 		mapLeftPosition  = mapLeftPosition - mapWidth;
 		mapRightPosition = mapRightPosition - mapWidth;
 	}
 
 	void MoveRightScreen(){
-		mainCamera.transform.position += new Vector3(mapWidth,0f,0f);
+		mainCamera.transform.position += new Vector3(mapWidth+4f,0f,0f);
 		mapLeftPosition  = mapLeftPosition + mapWidth;
 		mapRightPosition = mapRightPosition + mapWidth;
 	}
