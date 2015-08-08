@@ -5,13 +5,13 @@ public class MoveController : MonoBehaviour {
 
 	public float speed;
 
-	private Rigidbody2D rb;
+	//private Rigidbody2D rb;
 	private Animator anim;
 	private bool isMove = false;
 	private Transform playerTransform;
 
 	void Start(){
-		rb = GetComponent<Rigidbody2D> ();
+		//rb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		playerTransform = GetComponent<Transform> ();
 	}
@@ -42,6 +42,7 @@ public class MoveController : MonoBehaviour {
 
 	void Move(float horizontalMove){
 		Vector2 movement = new Vector2(horizontalMove,0).normalized;
-		rb.velocity = movement * speed;
+		//rb.velocity = movement * speed;
+		transform.Translate (movement *speed);
 	}
 }

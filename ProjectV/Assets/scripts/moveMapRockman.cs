@@ -12,8 +12,11 @@
  * spawmオブジェクトの利用によりmapControllとの連携を削除
  * Map番地の管理はSpawnPointを基準にすることでScript間の連携ではなくSpawnのアタッチで済ませる
  * saveも同様に管理する
- * 
  * 2015/08/06 Tur - Fujita
+ * 
+ * Map間のギャップを考慮したカメラ移動に修正(オフセットを設けた)
+ * Mapサイズを16:9に固定したので画面サイズの取得を廃止
+ * 2015/08/08 Sat - Fujita
 */
 
 /*
@@ -58,6 +61,8 @@ public class moveMapRockman : MonoBehaviour {
 	// mapの縦横の長さを保存する変数
 	public float mapWidth;	//横
 	public float mapHeight;	//縦
+	public float hSideGapOfMap;
+	public float vSideGapOfMap;
 
 	void Start () {
 				
@@ -66,7 +71,7 @@ public class moveMapRockman : MonoBehaviour {
 		// カメラを取得
 		mainCamera = cameraObject.GetComponent<Camera> ();
 		// カメラを取得の初期座標を取得
-		cameraStartPosition = playerSpawnPoint.transform.position + spawnCameraOffset;
+		cameraStartPosition = mainCamera.transform.position;//playerSpawnPoint.transform.position + spawnCameraOffset;
 
 		// Playerオブジェクトを取得
 		playerObject = GameObject.FindGameObjectWithTag ("Player");
@@ -76,15 +81,15 @@ public class moveMapRockman : MonoBehaviour {
 		mainCamera.transform.position = cameraStartPosition;
 		
 		// 座標値を出力
-		Debug.Log ("Left,  Top" + mapLeftPosition + ", " + mapTopPosition);
-		Debug.Log ("Right, Bottom" + mapRightPosition + ", " + mapBottomPosition);
+		//Debug.Log ("Left,  Top" + mapLeftPosition + ", " + mapTopPosition);
+		//Debug.Log ("Right, Bottom" + mapRightPosition + ", " + mapBottomPosition);
 
 		// 初期マップの座標取得
 		// マップの縦横の長さ取得
 		GetScreenSize ();
 		
 		// spawnPointに応じて開始地点にカメラ配置
-		mainCamera.transform.position = playerSpawnPoint.transform.position + spawnCameraOffset; 
+		//mainCamera.transform.position = playerSpawnPoint.transform.position + spawnCameraOffset; 
 
 		// spawnPointに応じて開始地点にPlayer配置
 		playerObject.transform.position = playerSpawnPoint.transform.position; 
@@ -113,27 +118,27 @@ public class moveMapRockman : MonoBehaviour {
 	}
 
 	void MoveLeftScreen(){
-		mainCamera.transform.position -= new Vector3(mapWidth+4f,0f,0f);
-		mapLeftPosition  = mapLeftPosition - mapWidth;
-		mapRightPosition = mapRightPosition - mapWidth;
+		mainCamera.transform.position -= new Vector3(mapWidth+hSideGapOfMap,0f,0f);
+		mapLeftPosition  = mapLeftPosition - (mapWidth+hSideGapOfMap);
+		mapRightPosition = mapRightPosition - (mapWidth+hSideGapOfMap);
 	}
 
 	void MoveRightScreen(){
-		mainCamera.transform.position += new Vector3(mapWidth+4f,0f,0f);
-		mapLeftPosition  = mapLeftPosition + mapWidth;
-		mapRightPosition = mapRightPosition + mapWidth;
+		mainCamera.transform.position += new Vector3(mapWidth+hSideGapOfMap,0f,0f);
+		mapLeftPosition  = mapLeftPosition + (mapWidth+hSideGapOfMap);
+		mapRightPosition = mapRightPosition + (mapWidth+hSideGapOfMap);
 	}
 
 	void MoveAvobeScreen(){
-		mainCamera.transform.position += new Vector3(0f,mapHeight+1f,0f);
-		mapTopPosition    = mapTopPosition    + mapHeight;
-		mapBottomPosition = mapBottomPosition + mapHeight;
+		mainCamera.transform.position += new Vector3(0f,mapHeight+vSideGapOfMap,0f);
+		mapTopPosition    = mapTopPosition    + (mapHeight+vSideGapOfMap);
+		mapBottomPosition = mapBottomPosition + (mapHeight+vSideGapOfMap);
 	}
 
 	void MoveBelowScreen(){
-		mainCamera.transform.position -= new Vector3(0f,mapHeight+1f,0f);
-		mapTopPosition    = mapTopPosition    - mapHeight;
-		mapBottomPosition = mapBottomPosition - mapHeight;
+		mainCamera.transform.position -= new Vector3(0f,mapHeight+vSideGapOfMap,0f);
+		mapTopPosition    = mapTopPosition    - (mapHeight+vSideGapOfMap);
+		mapBottomPosition = mapBottomPosition - (mapHeight+vSideGapOfMap);
 	}
 	
 	void GetScreenSize(){
@@ -145,7 +150,7 @@ public class moveMapRockman : MonoBehaviour {
 		mapTopPosition    = bottomRight.y;
 		mapBottomPosition = topLeft.y;
 
-		mapWidth = Mathf.Abs(bottomRight.x - topLeft.x);
-		mapHeight = Mathf.Abs (topLeft.y - bottomRight.y);
+		mapWidth = 16f;//Mathf.Abs(bottomRight.x - topLeft.x);
+		mapHeight = 9f;//Mathf.Abs (topLeft.y - bottomRight.y);
 	}
 }
