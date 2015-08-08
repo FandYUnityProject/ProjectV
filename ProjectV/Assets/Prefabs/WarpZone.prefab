@@ -42,7 +42,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419462}
-  - 61: {fileID: 6188404}
   m_Layer: 0
   m_Name: WarpZone
   m_TagString: Untagged
@@ -91,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50, y: 30, z: -1.46875}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 482002}
@@ -107,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.3499999, z: 0}
+  m_LocalPosition: {x: 0, y: -4.80000019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 419462}
@@ -119,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.3499999, z: 0}
+  m_LocalPosition: {x: 0, y: 4.80000019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 419462}
@@ -131,7 +130,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.83699989, y: 0, z: 0}
+  m_LocalPosition: {x: 8.80000019, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 419462}
@@ -143,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.80999994, y: 0, z: 0}
+  m_LocalPosition: {x: -8.80000019, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 419462}
@@ -158,9 +157,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -1.43051147e-06, y: -.265127182}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: .317169189, y: 8.85013962}
+  m_Size: {x: .300000012, y: 9}
 --- !u!61 &6129258
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -173,7 +172,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 16, y: .330000013}
+  m_Size: {x: 16, y: .300000012}
 --- !u!61 &6157068
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -186,7 +185,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 16, y: .330000013}
+  m_Size: {x: 16, y: .300000012}
 --- !u!61 &6168456
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -197,22 +196,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -1.43051147e-06, y: -.265127182}
-  serializedVersion: 2
-  m_Size: {x: .317169189, y: 8.85013962}
---- !u!61 &6188404
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167372}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: .300000012, y: 9}
 --- !u!114 &11416800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,7 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toTransportPosition: {x: 0, y: 0, z: 0}
   fromTransportPosition: {x: 0, y: 0, z: 0}
-  gapOfMap: {x: 3, y: 0, z: 0}
+  gapOfMap: {x: 0, y: -1.5, z: 0}
 --- !u!114 &11422558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,7 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toTransportPosition: {x: 0, y: 0, z: 0}
   fromTransportPosition: {x: 0, y: 0, z: 0}
-  gapOfMap: {x: 3, y: 0, z: 0}
+  gapOfMap: {x: 0, y: 1.5, z: 0}
 --- !u!114 &11477558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -254,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toTransportPosition: {x: 0, y: 0, z: 0}
   fromTransportPosition: {x: 0, y: 0, z: 0}
-  gapOfMap: {x: -3, y: 0, z: 0}
+  gapOfMap: {x: -4.30000019, y: 0, z: 0}
 --- !u!114 &11483672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,14 +254,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toTransportPosition: {x: 0, y: 0, z: 0}
   fromTransportPosition: {x: 0, y: 0, z: 0}
-  gapOfMap: {x: 3, y: 0, z: 0}
+  gapOfMap: {x: 4.30000019, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: gapOfMap.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: gapOfMap.y
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 167372}

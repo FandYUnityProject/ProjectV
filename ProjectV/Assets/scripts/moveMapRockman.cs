@@ -50,10 +50,10 @@ public class moveMapRockman : MonoBehaviour {
 	public Vector3 spawnCameraOffset;
 
 	// 現在のmapの端座標を保存する変数
-	public static float mapLeftPosition;	// Left
-	public static float mapRightPosition;	// Right
-	public static float mapTopPosition;	// Top
-	public static float mapBottomPosition;	// Bottom
+	public  float mapLeftPosition;	// Left
+	public  float mapRightPosition;	// Right
+	public  float mapTopPosition;	// Top
+	public  float mapBottomPosition;	// Bottom
 
 	// mapの縦横の長さを保存する変数
 	public float mapWidth;	//横
@@ -125,13 +125,13 @@ public class moveMapRockman : MonoBehaviour {
 	}
 
 	void MoveAvobeScreen(){
-		mainCamera.transform.position += new Vector3(0f,mapHeight,0f);
+		mainCamera.transform.position += new Vector3(0f,mapHeight+1f,0f);
 		mapTopPosition    = mapTopPosition    + mapHeight;
 		mapBottomPosition = mapBottomPosition + mapHeight;
 	}
 
 	void MoveBelowScreen(){
-		mainCamera.transform.position -= new Vector3(0f,mapHeight,0f);
+		mainCamera.transform.position -= new Vector3(0f,mapHeight+1f,0f);
 		mapTopPosition    = mapTopPosition    - mapHeight;
 		mapBottomPosition = mapBottomPosition - mapHeight;
 	}
@@ -142,8 +142,8 @@ public class moveMapRockman : MonoBehaviour {
 
 		mapLeftPosition   = topLeft.x;
 		mapRightPosition  = bottomRight.x;
-		mapTopPosition    = topLeft.y;
-		mapBottomPosition = bottomRight.y;
+		mapTopPosition    = bottomRight.y;
+		mapBottomPosition = topLeft.y;
 
 		mapWidth = Mathf.Abs(bottomRight.x - topLeft.x);
 		mapHeight = Mathf.Abs (topLeft.y - bottomRight.y);
