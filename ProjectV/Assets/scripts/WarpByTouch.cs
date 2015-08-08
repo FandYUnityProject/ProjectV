@@ -18,6 +18,7 @@ public class WarpByTouch : MonoBehaviour {
 			fromTransportPosition = coll.transform.position;
 			toTransportPosition = fromTransportPosition + gapOfMap;
 			player.transform.localPosition = toTransportPosition;
+			Debug.Log(player.transform.position);
 		}
 	}
 }
