@@ -33,6 +33,12 @@ public class SaveScript : MonoBehaviour {
 			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "FUEL_05", FUELScript.getFUEL_05);
 			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "FUEL_06", FUELScript.getFUEL_06);
 			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "FUEL_07", FUELScript.getFUEL_07);
+
+			if ( !GravityInversion2D.isGravity ){
+				PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "isNotGravity", 1);
+			} else {
+				PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "isNotGravity", 0);
+			}
 		}
 	}
 }

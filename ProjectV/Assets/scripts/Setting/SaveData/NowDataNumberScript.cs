@@ -19,6 +19,7 @@ public class NowDataNumberScript : MonoBehaviour {
 	public static int MST_FUEL_05;
 	public static int MST_FUEL_06;
 	public static int MST_FUEL_07;
+	public static int MST_isNotGravity;
 	
 	// saveContoroll(Object)が重複作成されるのを防ぐ
 	void Awake (){
@@ -46,18 +47,19 @@ public class NowDataNumberScript : MonoBehaviour {
 
 			Debug.Log(nowSaveData);
 
-			MST_mapNumber_X = PlayerPrefs.GetInt(nowSaveData + "mapNumber_X");
-			MST_mapNumber_Y = PlayerPrefs.GetInt(nowSaveData + "mapNumber_Y");
-			MST_worldName   = PlayerPrefs.GetString(nowSaveData + "worldName");
-			MST_FUEL_01     = PlayerPrefs.GetInt(nowSaveData + "FUEL_01");
-			MST_FUEL_02     = PlayerPrefs.GetInt(nowSaveData + "FUEL_02");
-			MST_FUEL_03     = PlayerPrefs.GetInt(nowSaveData + "FUEL_03");
-			MST_FUEL_04     = PlayerPrefs.GetInt(nowSaveData + "FUEL_04");
-			MST_FUEL_05     = PlayerPrefs.GetInt(nowSaveData + "FUEL_05");
-			MST_FUEL_06     = PlayerPrefs.GetInt(nowSaveData + "FUEL_06");
-			MST_FUEL_07     = PlayerPrefs.GetInt(nowSaveData + "FUEL_07");
+			MST_mapNumber_X  = PlayerPrefs.GetInt(nowSaveData + "mapNumber_X");
+			MST_mapNumber_Y  = PlayerPrefs.GetInt(nowSaveData + "mapNumber_Y");
+			MST_worldName    = PlayerPrefs.GetString(nowSaveData + "worldName");
+			MST_FUEL_01      = PlayerPrefs.GetInt(nowSaveData + "FUEL_01");
+			MST_FUEL_02      = PlayerPrefs.GetInt(nowSaveData + "FUEL_02");
+			MST_FUEL_03      = PlayerPrefs.GetInt(nowSaveData + "FUEL_03");
+			MST_FUEL_04      = PlayerPrefs.GetInt(nowSaveData + "FUEL_04");
+			MST_FUEL_05      = PlayerPrefs.GetInt(nowSaveData + "FUEL_05");
+			MST_FUEL_06      = PlayerPrefs.GetInt(nowSaveData + "FUEL_06");
+			MST_FUEL_07      = PlayerPrefs.GetInt(nowSaveData + "FUEL_07");
+			MST_isNotGravity = PlayerPrefs.GetInt(nowSaveData + "isNotGravity");
 
-			Debug.Log("MST_mapNumber_X: " + MST_mapNumber_X + ", MST_mapNumber_Y: " + MST_mapNumber_Y + ", MST_worldName: " + MST_worldName + ", MST_FUEL_01: " + MST_FUEL_01 + ", MST_FUEL_02: " + MST_FUEL_02 + ", MST_FUEL_03: " + MST_FUEL_03 + ", MST_FUEL_04: " + MST_FUEL_04 + ", MST_FUEL_05: " + MST_FUEL_05 + ", MST_FUEL_06: " + MST_FUEL_06 + ", MST_FUEL_07: " + MST_FUEL_07);
+			Debug.Log("MST_mapNumber_X: " + MST_mapNumber_X + ", MST_mapNumber_Y: " + MST_mapNumber_Y + ", MST_worldName: " + MST_worldName + ", MST_FUEL_01: " + MST_FUEL_01 + ", MST_FUEL_02: " + MST_FUEL_02 + ", MST_FUEL_03: " + MST_FUEL_03 + ", MST_FUEL_04: " + MST_FUEL_04 + ", MST_FUEL_05: " + MST_FUEL_05 + ", MST_FUEL_06: " + MST_FUEL_06 + ", MST_FUEL_07: " + MST_FUEL_07 + ", MST_isNotGravity: " + MST_isNotGravity );
 
 			isLoadData = true;
 			return;

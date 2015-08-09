@@ -9,7 +9,7 @@ using System.Collections;
 
 public class GravityInversion2D : MonoBehaviour {
 
-	bool isGravity = true;
+	public static bool isGravity = true;
 	bool isGravityInversion = false;	// 重力反転中か（接地するまで重力反転は１度のみ）
 	public Vector2 Gravityparameta = new Vector2(0,20);
 	

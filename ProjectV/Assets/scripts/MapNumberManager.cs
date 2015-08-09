@@ -26,7 +26,14 @@ public class MapNumberManager : MonoBehaviour {
 		// Playerオブジェクトを取得
 		playerObject = GameObject.FindGameObjectWithTag ("Player");
 		// spawnPointに応じて開始地点にPlayer配置
-		playerObject.transform.position = playerSpawnPoint.transform.position; 
+		playerObject.transform.position = playerSpawnPoint.transform.position;
+
+		// 開始時の重力反転情報を取得
+		if (PlayerPrefs.GetInt (NowDataNumberScript.nowSaveData + "isNotGravity") == 0) {
+			GravityInversion2D.isGravity = true;
+		} else {
+			GravityInversion2D.isGravity = false;
+		}
 	}
 
 	public static void AddMapNumberX(int x){
