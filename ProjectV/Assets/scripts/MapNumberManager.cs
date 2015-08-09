@@ -9,6 +9,9 @@ public class MapNumberManager : MonoBehaviour {
 	// spawnオブジェクト
 	public GameObject playerSpawnPoint;
 
+	// playerオブジェクト
+	private GameObject playerObject;
+
 	void Start(){
 
 		// 再開時のマップ番地を取得
@@ -16,9 +19,14 @@ public class MapNumberManager : MonoBehaviour {
 		mapNumber_Y = PlayerPrefs.GetInt(NowDataNumberScript.nowSaveData + "mapNumber_Y");
 
 		
-		// spawnオブジェクトを取得し、セーブデータに応じてプレイヤーを配置
+		// 再開時のマップ番地に応じてSpawn場所を変更
 		playerSpawnPoint = GameObject.Find ("PlayerSpawnPoint");
 		playerSpawnPoint.transform.position = new Vector2(mapNumber_X * 20, mapNumber_Y * 10);
+
+		// Playerオブジェクトを取得
+		playerObject = GameObject.FindGameObjectWithTag ("Player");
+		// spawnPointに応じて開始地点にPlayer配置
+		playerObject.transform.position = playerSpawnPoint.transform.position; 
 	}
 
 	public static void AddMapNumberX(int x){
