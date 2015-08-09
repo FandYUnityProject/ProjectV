@@ -1986,22 +1986,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 471396, guid: 39e0b14770ef74fcc8fbfcb75796a277, type: 2}
   m_PrefabInternal: {fileID: 833834486}
---- !u!1 &915612008 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 131782, guid: 56f176c4282f89c4e8f2db6ae0225c4d, type: 2}
-  m_PrefabInternal: {fileID: 1157301131}
---- !u!114 &915612017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 915612008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0b1ed3af0e53034e8c4212df526ecf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpawnPoint: {fileID: 0}
 --- !u!1001 &933225334
 Prefab:
   m_ObjectHideFlags: 0
@@ -2259,29 +2243,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 5017300, guid: 56f176c4282f89c4e8f2db6ae0225c4d, type: 2}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6137622, guid: 56f176c4282f89c4e8f2db6ae0225c4d, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486074, guid: 56f176c4282f89c4e8f2db6ae0225c4d, type: 2}
-      propertyPath: speed
-      value: .150000006
-      objectReference: {fileID: 0}
-    - target: {fileID: 11483068, guid: 56f176c4282f89c4e8f2db6ae0225c4d, type: 2}
-      propertyPath: Gravityparameta.y
-      value: 30
+    - target: {fileID: 141156, guid: 56f176c4282f89c4e8f2db6ae0225c4d, type: 2}
+      propertyPath: m_Name
+      value: FlapJudge
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56f176c4282f89c4e8f2db6ae0225c4d, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1157301132 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 402014, guid: 56f176c4282f89c4e8f2db6ae0225c4d, type: 2}
-  m_PrefabInternal: {fileID: 1157301131}
 --- !u!4 &1172830617 stripped
 Transform:
   m_PrefabParentObject: {fileID: 419462, guid: 7e28e3157a15a3045b0a2409e3a28560, type: 2}
@@ -3602,47 +3570,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69d76cd973064e546a0bcd2d5a6eed75, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2084226457
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2084226458}
-  - 61: {fileID: 2084226459}
-  m_Layer: 0
-  m_Name: FlapJudje
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2084226458
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2084226457}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1157301132}
-  m_RootOrder: 0
---- !u!61 &2084226459
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2084226457}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: .673858643}
-  serializedVersion: 2
-  m_Size: {x: 1.34000003, y: 2.5722692}
 --- !u!4 &2099181607 stripped
 Transform:
   m_PrefabParentObject: {fileID: 445096, guid: 69d76cd973064e546a0bcd2d5a6eed75, type: 2}
