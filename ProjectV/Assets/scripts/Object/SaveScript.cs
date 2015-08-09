@@ -23,8 +23,8 @@ public class SaveScript : MonoBehaviour {
 			// プレイヤーに触れたら、現在のデータをセーブする
 			Debug.Log("mapNumber_XY: " + NowDataNumberScript.nowSaveData + "MAP" + MapNumberManager.mapNumber_X + MapNumberManager.mapNumber_Y);
 			
-			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "mapNumber_X", MapNumberManager.mapNumber_X);
-			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "mapNumber_Y", MapNumberManager.mapNumber_Y);
+			PlayerPrefs.SetFloat(NowDataNumberScript.nowSaveData + "mapNumber_X", this.transform.position.x);
+			PlayerPrefs.SetFloat(NowDataNumberScript.nowSaveData + "mapNumber_Y", this.transform.position.y);
 			PlayerPrefs.SetString(NowDataNumberScript.nowSaveData + "worldName","MAP:" + MapNumberManager.mapNumber_X + MapNumberManager.mapNumber_Y);
 			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "FUEL_01", FUELScript.getFUEL_01);
 			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "FUEL_02", FUELScript.getFUEL_02);

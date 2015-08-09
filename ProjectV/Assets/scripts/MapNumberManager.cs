@@ -3,8 +3,8 @@ using System.Collections;
 
 public class MapNumberManager : MonoBehaviour {
 
-	public static int mapNumber_X;
-	public static int mapNumber_Y;
+	public static float mapNumber_X;
+	public static float mapNumber_Y;
 	
 	// spawnオブジェクト
 	public GameObject playerSpawnPoint;
@@ -15,13 +15,13 @@ public class MapNumberManager : MonoBehaviour {
 	void Start(){
 
 		// 再開時のマップ番地を取得
-		mapNumber_X = PlayerPrefs.GetInt(NowDataNumberScript.nowSaveData + "mapNumber_X");
-		mapNumber_Y = PlayerPrefs.GetInt(NowDataNumberScript.nowSaveData + "mapNumber_Y");
+		mapNumber_X = PlayerPrefs.GetFloat(NowDataNumberScript.nowSaveData + "mapNumber_X");
+		mapNumber_Y = PlayerPrefs.GetFloat(NowDataNumberScript.nowSaveData + "mapNumber_Y");
 
 		
 		// 再開時のマップ番地に応じてSpawn場所を変更
 		playerSpawnPoint = GameObject.Find ("PlayerSpawnPoint");
-		playerSpawnPoint.transform.position = new Vector2(mapNumber_X * 20, mapNumber_Y * 10);
+		playerSpawnPoint.transform.position = new Vector2(mapNumber_X, mapNumber_Y);
 
 		// Playerオブジェクトを取得
 		playerObject = GameObject.FindGameObjectWithTag ("Player");
