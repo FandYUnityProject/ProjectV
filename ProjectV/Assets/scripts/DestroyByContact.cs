@@ -25,8 +25,8 @@ public class DestroyByContact : MonoBehaviour {
 			// Destroy (gameObject);
 			
 			// 再開時のマップ番地に応じてSpawn場所を変更
-			playerSpawnPoint.transform.position = new Vector2 (PlayerPrefs.GetInt (NowDataNumberScript.nowSaveData + "mapNumber_X") * 20
-		                                                  , PlayerPrefs.GetInt (NowDataNumberScript.nowSaveData + "mapNumber_Y") * 10);
+			playerSpawnPoint.transform.position = new Vector2 (PlayerPrefs.GetFloat (NowDataNumberScript.nowSaveData + "mapNumber_X")
+		                                                  , PlayerPrefs.GetFloat (NowDataNumberScript.nowSaveData + "mapNumber_Y"));
 			
 			// spawnPointに応じて開始地点にPlayer配置
 			playerObject.transform.position = playerSpawnPoint.transform.position;
