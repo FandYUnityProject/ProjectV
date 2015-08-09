@@ -36,13 +36,13 @@ public class dataSelectButtonScript : MonoBehaviour {
 			worldName.text = PlayerPrefs.GetString (this.name + "worldName");
 
 			// 現在のFUEL回収状況に応じて表示
-			if( PlayerPrefs.GetInt (this.name + "Fuel_01") == 1 ){ Fuel_01.text = "■"; }
-			if( PlayerPrefs.GetInt (this.name + "Fuel_02") == 1 ){ Fuel_02.text = "■"; }
-			if( PlayerPrefs.GetInt (this.name + "Fuel_03") == 1 ){ Fuel_03.text = "■"; }
-			if( PlayerPrefs.GetInt (this.name + "Fuel_04") == 1 ){ Fuel_04.text = "■"; }
-			if( PlayerPrefs.GetInt (this.name + "Fuel_05") == 1 ){ Fuel_05.text = "■"; }
-			if( PlayerPrefs.GetInt (this.name + "Fuel_06") == 1 ){ Fuel_06.text = "■"; }
-			if( PlayerPrefs.GetInt (this.name + "Fuel_07") == 1 ){ Fuel_07.text = "■"; }
+			if( PlayerPrefs.GetInt (this.name + "FUEL_01") == 1 ){ Fuel_01.text = "■"; }
+			if( PlayerPrefs.GetInt (this.name + "FUEL_02") == 1 ){ Fuel_02.text = "■"; }
+			if( PlayerPrefs.GetInt (this.name + "FUEL_03") == 1 ){ Fuel_03.text = "■"; }
+			if( PlayerPrefs.GetInt (this.name + "FUEL_04") == 1 ){ Fuel_04.text = "■"; }
+			if( PlayerPrefs.GetInt (this.name + "FUEL_05") == 1 ){ Fuel_05.text = "■"; }
+			if( PlayerPrefs.GetInt (this.name + "FUEL_06") == 1 ){ Fuel_06.text = "■"; }
+			if( PlayerPrefs.GetInt (this.name + "FUEL_07") == 1 ){ Fuel_07.text = "■"; }
 		}
 	}
 	
@@ -53,6 +53,8 @@ public class dataSelectButtonScript : MonoBehaviour {
 
 	// ボタンをクリックするとゲームシーンへ移動する
 	public void OnClick() {
+
+		NowDataNumberScript.nowData = this.name;
 
 		// もしNewGameだったら Nonニューゲームフラグを下ろし、ワールド名を「Game Start!」に設定
 		// それ以外だったらマップ座標を指定してゲームスタート!
