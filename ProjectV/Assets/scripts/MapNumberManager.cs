@@ -35,13 +35,13 @@ public class MapNumberManager : MonoBehaviour {
 			GravityInversion2D.isGravity = false;
 		}
 	}
-
-	public static void AddMapNumberX(int x){
-		mapNumber_X += x;
-		Debug.Log ("Current Map Number is ("+mapNumber_X +","+ mapNumber_Y+")");
-	}
-	public static void AddMapNumberY(int y){
-		mapNumber_Y += y;
-		Debug.Log ("Current Map Number is ("+mapNumber_X +"," + mapNumber_Y+")");
-	}
+	//2015/8/9 MapNumberの取得を廃止
+	//public static void AddMapNumberX(int x){
+	//	mapNumber_X += x;
+	//	Debug.Log ("Current Map Number is ("+mapNumber_X +","+ mapNumber_Y+")");
+	//}
+	//public static void AddMapNumberY(int y){
+	//	mapNumber_Y += y;
+	//	Debug.Log ("Current Map Number is ("+mapNumber_X +"," + mapNumber_Y+")");
+	//}
 }

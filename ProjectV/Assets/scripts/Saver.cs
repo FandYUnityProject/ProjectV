@@ -6,6 +6,9 @@ public class Saver : MonoBehaviour {
 	private bool isActive = false;
 	private Transform zPosition;
 	Vector3 v;
+	public float saverCoolTime = 1f;
+	public float saverWaitTime = 1f;
+	public float timer;
 
 	void Star(){
 		zPosition = GetComponent<Transform> ();
@@ -19,14 +22,19 @@ public class Saver : MonoBehaviour {
 	}
 
 	void Update(){
-
-		if (isActive) {
-			SaveGame();
+		timer += Time.deltaTime;
+		if (isActive && timer > saverCoolTime) {
+			SaveGame ();
+		} else if(!isActive && timer > saverWaitTime){
+			v.z = 1f;
+			transform.localPosition = v;
 		}
 	}
 
 	void SaveGame(){
 		v.z = -1f;
 		transform.localPosition = v;
+		isActive = false;
+		timer = 0;
 	}
 }

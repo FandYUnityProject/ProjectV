@@ -19,14 +19,14 @@ public class WarpByTouch : MonoBehaviour {
 			toTransportPosition = fromTransportPosition + gapOfMap;
 			player.transform.localPosition = toTransportPosition;
 			//Debug.Log(player.transform.position);
-			if(gapOfMap.x > 0f && gapOfMap.y == 0)
-				MapNumberManager.AddMapNumberX(1);
-			else if(gapOfMap.x < 0f && gapOfMap.y == 0)
-				MapNumberManager.AddMapNumberX(-1);
-			else if(gapOfMap.x == 0 && gapOfMap.y > 0)
-				MapNumberManager.AddMapNumberY(1);
-			else if(gapOfMap.x == 0 && gapOfMap.y < 0)
-				MapNumberManager.AddMapNumberY(-1);
+			//if(gapOfMap.x > 0f && gapOfMap.y == 0)
+			//	MapNumberManager.AddMapNumberX(1);
+			//else if(gapOfMap.x < 0f && gapOfMap.y == 0)
+			//	MapNumberManager.AddMapNumberX(-1);
+			//else if(gapOfMap.x == 0 && gapOfMap.y > 0)
+			//	MapNumberManager.AddMapNumberY(1);
+			//else if(gapOfMap.x == 0 && gapOfMap.y < 0)
+			//	MapNumberManager.AddMapNumberY(-1);
 
 		}
 	}
