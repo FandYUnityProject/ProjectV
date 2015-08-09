@@ -1,20 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Saver.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WarpByTouch.cs">
     <Files>
-      <File FileName="Assets\Scripts\Saver.cs" Line="9" Column="32" />
-      <File FileName="Assets\scripts\Setting\SaveData\SaveData.cs" Line="20" Column="1" />
-      <File FileName="Assets\scripts\UI\dataSelectButtonScript.cs" Line="81" Column="24" />
-      <File FileName="Assets\scripts\moveMapRockman.cs" Line="30" Column="6" />
-      <File FileName="Assets\scripts\WarpByTouch.cs" Line="29" Column="6" />
-      <File FileName="Assets\scripts\MoveController.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Object\ChikuwaBlockScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Object\FUELScript.cs" Line="19" Column="41" />
-      <File FileName="Assets\scripts\Setting\SaveData\NowDataNumberScript.cs" Line="60" Column="72" />
-      <File FileName="Assets\scripts\UI\dataDeleteScript.cs" Line="38" Column="54" />
-      <File FileName="Assets\scripts\MapNumberManager.cs" Line="48" Column="1" />
-      <File FileName="Assets\Scripts\Object\SaveScript.cs" Line="18" Column="3" />
-      <File FileName="..\..\..\3DSurvival\Assets\Scripts\Player\PlayerShooting.cs" Line="33" Column="33" />
+      <File FileName="Assets\Scripts\MoveController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GravityInversion2D.cs" Line="36" Column="33" />
+      <File FileName="Assets\Scripts\WarpByTouch.cs" Line="34" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,7 +16,7 @@
                 <Node name="SaveData" expanded="True" />
               </Node>
               <Node name="UI" expanded="True" />
-              <Node name="Saver.cs" selected="True" />
+              <Node name="WarpByTouch.cs" selected="True" />
             </Node>
           </Node>
         </State>
