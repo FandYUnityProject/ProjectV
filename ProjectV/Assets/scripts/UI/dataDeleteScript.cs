@@ -36,6 +36,7 @@ public class dataDeleteScript : MonoBehaviour {
 		PlayerPrefs.SetInt(dataNumberName + "FUEL_05", 0 );
 		PlayerPrefs.SetInt(dataNumberName + "FUEL_06", 0 );
 		PlayerPrefs.SetInt(dataNumberName + "FUEL_07", 0 );
+		PlayerPrefs.SetInt(dataNumberName + "isNotGravity", 0 );
 
 		if(dataSelectButton!=null){
 			dataSelectButton.ReData();
