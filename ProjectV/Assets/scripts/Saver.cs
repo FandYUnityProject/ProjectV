@@ -28,6 +28,5 @@ public class Saver : MonoBehaviour {
 	void SaveGame(){
 		v.z = -1f;
 		transform.localPosition = v;
-		Debug.Log ("Save");
 	}
 }

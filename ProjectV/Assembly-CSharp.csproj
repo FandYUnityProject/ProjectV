@@ -53,6 +53,7 @@
      <Compile Include="Assets\scripts\MoveController.cs" />
      <Compile Include="Assets\scripts\Object\ChikuwaBlockScript.cs" />
      <Compile Include="Assets\scripts\Object\FUELScript.cs" />
+     <Compile Include="Assets\scripts\Object\SaveScript.cs" />
      <Compile Include="Assets\scripts\Saver.cs" />
      <Compile Include="Assets\scripts\Setting\SaveData\NowDataNumberScript.cs" />
      <Compile Include="Assets\scripts\Setting\SaveData\SaveData.cs" />

@@ -27,6 +27,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 491162}
   - 212: {fileID: 21205168}
+  - 114: {fileID: 11482388}
+  - 61: {fileID: 6111050}
   m_Layer: 0
   m_Name: SaveGreen
   m_TagString: Untagged
@@ -59,6 +61,19 @@ Transform:
   - {fileID: 463184}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6111050
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184512}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.27999997, y: 1.27999997}
 --- !u!61 &6117142
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -81,6 +96,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b9e14102cbc13b438d6d810b8ba7fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11482388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ecc6906e4644dbdbe1c57bd5b0586b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21205168
@@ -141,7 +167,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184512}
