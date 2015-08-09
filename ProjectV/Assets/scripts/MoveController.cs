@@ -43,6 +43,6 @@ public class MoveController : MonoBehaviour {
 	void Move(float horizontalMove){
 		Vector2 movement = new Vector2(horizontalMove,0).normalized;
 		//rb.velocity = movement * speed;
-		transform.Translate (movement *speed);
+		transform.Translate(movement * speed);
 	}
 }

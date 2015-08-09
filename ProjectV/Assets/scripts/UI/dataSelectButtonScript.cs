@@ -68,6 +68,6 @@ public class dataSelectButtonScript : MonoBehaviour {
 
 		// Game Start!!
 		Debug.Log( this.name + "Start Game!" );
-		Application.LoadLevel ("GameScene");
+		Application.LoadLevel ("Level01");
 	}
 }

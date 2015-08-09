@@ -1,10 +1,30 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MapNumberManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/UI/dataSelectButtonScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\moveMapRockman.cs" Line="92" Column="5" />
-      <File FileName="Assets\Scripts\MapNumberManager.cs" Line="15" Column="71" />
+      <File FileName="Assets/scripts/Setting/SaveData/SaveData.cs" Line="23" Column="3" />
+      <File FileName="Assets/scripts/Setting/Sound/SoundScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/UI/dataSelectButtonScript.cs" Line="71" Column="34" />
+      <File FileName="Assets/scripts/moveMapRockman.cs" Line="6" Column="8" />
+      <File FileName="Assets/scripts/WarpByTouch.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="scripts" expanded="True">
+              <Node name="Setting" expanded="True">
+                <Node name="SaveData" expanded="True" />
+                <Node name="Sound" expanded="True" />
+              </Node>
+              <Node name="UI" expanded="True">
+                <Node name="dataSelectButtonScript.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
