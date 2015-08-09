@@ -15,7 +15,7 @@ public class dataSelectButtonScript : MonoBehaviour {
 		Text Fuel_04    = GameObject.Find ("UI/" + this.name + "/DataContents05").GetComponent<Text> ();
 		Text Fuel_05    = GameObject.Find ("UI/" + this.name + "/DataContents06").GetComponent<Text> ();
 		Text Fuel_06    = GameObject.Find ("UI/" + this.name + "/DataContents07").GetComponent<Text> ();
-		Text Fuel_07    = GameObject.Find ("UI/" + this.name + "/DataContents07").GetComponent<Text> ();
+		Text Fuel_07    = GameObject.Find ("UI/" + this.name + "/DataContents08").GetComponent<Text> ();
 
 		worldName.color = Color.black;
 		Fuel_01.color   = Color.black;
@@ -92,7 +92,7 @@ public class dataSelectButtonScript : MonoBehaviour {
 		Text Fuel_04    = GameObject.Find ("UI/" + this.name + "/DataContents05").GetComponent<Text> ();
 		Text Fuel_05    = GameObject.Find ("UI/" + this.name + "/DataContents06").GetComponent<Text> ();
 		Text Fuel_06    = GameObject.Find ("UI/" + this.name + "/DataContents07").GetComponent<Text> ();
-		Text Fuel_07    = GameObject.Find ("UI/" + this.name + "/DataContents07").GetComponent<Text> ();
+		Text Fuel_07    = GameObject.Find ("UI/" + this.name + "/DataContents08").GetComponent<Text> ();
 		
 		worldName.color = Color.black;
 		Fuel_01.color   = Color.black;
