@@ -26,6 +26,14 @@ public class dataSelectButtonScript : MonoBehaviour {
 		Fuel_06.color   = Color.black;
 		Fuel_07.color   = Color.black;
 
+		worldName.text  = "";
+		Fuel_01.text    = "□";
+		Fuel_02.text    = "□";
+		Fuel_03.text    = "□";
+		Fuel_04.text    = "□";
+		Fuel_05.text    = "□";
+		Fuel_06.text    = "□";
+		Fuel_07.text    = "□";
 
 		// もしNewGameだったら「New Game」と表示
 		if (PlayerPrefs.GetInt (this.name + "isNotNewGame") == 0) {
@@ -71,5 +79,36 @@ public class dataSelectButtonScript : MonoBehaviour {
 		// Game Start!!
 		Debug.Log( this.name + "Start Game!" );
 		Application.LoadLevel ("Level01");
+	}
+
+	public void ReData(){
+
+		//--- データ選択ボタン内のテキストを変更 ---//
+		Text worldName  = GameObject.Find ("UI/" + this.name + "/DataContents01").GetComponent<Text> ();
+		Text Fuel_01    = GameObject.Find ("UI/" + this.name + "/DataContents02").GetComponent<Text> ();
+		Text Fuel_02    = GameObject.Find ("UI/" + this.name + "/DataContents03").GetComponent<Text> ();
+		Text Fuel_03    = GameObject.Find ("UI/" + this.name + "/DataContents04").GetComponent<Text> ();
+		Text Fuel_04    = GameObject.Find ("UI/" + this.name + "/DataContents05").GetComponent<Text> ();
+		Text Fuel_05    = GameObject.Find ("UI/" + this.name + "/DataContents06").GetComponent<Text> ();
+		Text Fuel_06    = GameObject.Find ("UI/" + this.name + "/DataContents07").GetComponent<Text> ();
+		Text Fuel_07    = GameObject.Find ("UI/" + this.name + "/DataContents07").GetComponent<Text> ();
+		
+		worldName.color = Color.black;
+		Fuel_01.color   = Color.black;
+		Fuel_02.color   = Color.black;
+		Fuel_03.color   = Color.black;
+		Fuel_04.color   = Color.black;
+		Fuel_05.color   = Color.black;
+		Fuel_06.color   = Color.black;
+		Fuel_07.color   = Color.black;
+
+		worldName.text = "New Game";
+		Fuel_01.text = "□";
+		Fuel_02.text = "□";
+		Fuel_03.text = "□";
+		Fuel_04.text = "□";
+		Fuel_05.text = "□";
+		Fuel_06.text = "□";
+		Fuel_07.text = "□";
 	}
 }

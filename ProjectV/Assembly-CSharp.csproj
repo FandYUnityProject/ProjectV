@@ -57,6 +57,7 @@
      <Compile Include="Assets\scripts\Setting\SaveData\NowDataNumberScript.cs" />
      <Compile Include="Assets\scripts\Setting\SaveData\SaveData.cs" />
      <Compile Include="Assets\scripts\Setting\Sound\SoundScript.cs" />
+     <Compile Include="Assets\scripts\UI\dataDeleteScript.cs" />
      <Compile Include="Assets\scripts\UI\dataSelectButtonScript.cs" />
      <Compile Include="Assets\scripts\WarpByTouch.cs" />
      <Compile Include="Assets\scripts\mapControll.cs" />

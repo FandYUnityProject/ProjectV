@@ -1,15 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Setting/SaveData/SaveData.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/UI/dataSelectButtonScript.cs">
     <Files>
-      <File FileName="Assets/scripts/Setting/SaveData/SaveData.cs" Line="23" Column="1" />
+      <File FileName="Assets/scripts/Setting/SaveData/SaveData.cs" Line="20" Column="1" />
       <File FileName="Assets/scripts/Setting/Sound/SoundScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/UI/dataSelectButtonScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/UI/dataSelectButtonScript.cs" Line="8" Column="17" />
       <File FileName="Assets/scripts/moveMapRockman.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/WarpByTouch.cs" Line="32" Column="3" />
-      <File FileName="Assets/scripts/MoveController.cs" Line="46" Column="41" />
-      <File FileName="Assets/scripts/Object/ChikuwaBlockScript.cs" Line="59" Column="36" />
-      <File FileName="Assets/scripts/Object/FUELScript.cs" Line="24" Column="32" />
+      <File FileName="Assets/scripts/WarpByTouch.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/MoveController.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Object/ChikuwaBlockScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Object/FUELScript.cs" Line="7" Column="17" />
+      <File FileName="Assets/scripts/Setting/SaveData/NowDataNumberScript.cs" Line="8" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,12 +19,12 @@
             <Node name="scripts" expanded="True">
               <Node name="Object" expanded="True" />
               <Node name="Setting" expanded="True">
-                <Node name="SaveData" expanded="True">
-                  <Node name="SaveData.cs" selected="True" />
-                </Node>
+                <Node name="SaveData" expanded="True" />
                 <Node name="Sound" expanded="True" />
               </Node>
-              <Node name="UI" expanded="True" />
+              <Node name="UI" expanded="True">
+                <Node name="dataSelectButtonScript.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
