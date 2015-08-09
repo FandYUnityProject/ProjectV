@@ -64,6 +64,8 @@ public class moveMapRockman : MonoBehaviour {
 	public float hSideGapOfMap;
 	public float vSideGapOfMap;
 
+	bool isFirstSpawn = false;
+
 	void Start () {
 				
 		// カメラオブジェクトを取得
@@ -91,12 +93,17 @@ public class moveMapRockman : MonoBehaviour {
 		// spawnPointに応じて開始地点にカメラ配置
 		//mainCamera.transform.position = playerSpawnPoint.transform.position + spawnCameraOffset; 
 
-		// spawnPointに応じて開始地点にPlayer配置
-		playerObject.transform.position = playerSpawnPoint.transform.position; 
-
 	}
 	
 	void Update () {
+
+		if (!isFirstSpawn) {
+			
+			// spawnPointに応じて開始地点にPlayer配置
+			playerObject.transform.position = playerSpawnPoint.transform.position; 
+			isFirstSpawn = true;
+		}
+
 		/* --- Playerが画面端に行くとカメラを移動させる --- */
 
 		// 左端
