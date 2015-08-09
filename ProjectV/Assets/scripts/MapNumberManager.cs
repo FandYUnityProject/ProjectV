@@ -31,8 +31,16 @@ public class MapNumberManager : MonoBehaviour {
 		// 開始時の重力反転情報を取得
 		if (PlayerPrefs.GetInt (NowDataNumberScript.nowSaveData + "isNotGravity") == 0) {
 			GravityInversion2D.isGravity = true;
+			
+			Vector2 scale = playerObject.transform.localScale;
+			scale.y = 1;
+			playerObject.transform.localScale = scale;
 		} else {
 			GravityInversion2D.isGravity = false;
+
+			Vector2 scale = playerObject.transform.localScale;
+			scale.y = -1;
+			playerObject.transform.localScale = scale;
 		}
 	}
 	//2015/8/9 MapNumberの取得を廃止

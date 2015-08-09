@@ -2083,6 +2083,10 @@ Prefab:
       propertyPath: m_Name
       value: SaveGreen
       objectReference: {fileID: 0}
+    - target: {fileID: 11482388, guid: bf65d47a9cb949641b6f22947557405f, type: 2}
+      propertyPath: mapName
+      value: "Ampere\u901A 02"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf65d47a9cb949641b6f22947557405f, type: 2}
   m_IsPrefabParent: 0
@@ -2929,6 +2933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ecc6906e4644dbdbe1c57bd5b0586b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapName: "Ampere\u901A 01"
 --- !u!1001 &1701215837
 Prefab:
   m_ObjectHideFlags: 0
