@@ -62,7 +62,7 @@ public class dataSelectButtonScript : MonoBehaviour {
 	// ボタンをクリックするとゲームシーンへ移動する
 	public void OnClick() {
 
-		NowDataNumberScript.nowData = this.name;
+		NowDataNumberScript.nowSaveData = this.name;
 
 		// もしNewGameだったら Nonニューゲームフラグを下ろし、ワールド名を「Game Start!」に設定
 		// それ以外だったらマップ座標を指定してゲームスタート!
@@ -81,6 +81,7 @@ public class dataSelectButtonScript : MonoBehaviour {
 		Application.LoadLevel ("Level01");
 	}
 
+	// セーブ選択画面のセーブデータの表示を再描画する
 	public void ReData(){
 
 		//--- データ選択ボタン内のテキストを変更 ---//

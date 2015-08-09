@@ -6,7 +6,7 @@ public class FUELScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		if (PlayerPrefs.GetInt (NowDataNumberScript.nowData + this.name) == 1) {
+		if (PlayerPrefs.GetInt (NowDataNumberScript.nowSaveData + this.name) == 1) {
 			GameObject.Destroy(gameObject);
 		}
 	}
@@ -21,7 +21,7 @@ public class FUELScript : MonoBehaviour {
 		if (coll.gameObject.tag == "Player") {
 
 			GameObject.Destroy(gameObject);
-			PlayerPrefs.SetInt(NowDataNumberScript.nowData + this.name, 1);
+			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + this.name, 1);
 		}
 	}
 }
