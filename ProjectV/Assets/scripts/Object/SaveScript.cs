@@ -3,6 +3,8 @@ using System.Collections;
 
 public class SaveScript : MonoBehaviour {
 
+	public string mapName;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -25,7 +27,7 @@ public class SaveScript : MonoBehaviour {
 			
 			PlayerPrefs.SetFloat(NowDataNumberScript.nowSaveData + "mapNumber_X", this.transform.position.x);
 			PlayerPrefs.SetFloat(NowDataNumberScript.nowSaveData + "mapNumber_Y", this.transform.position.y);
-			PlayerPrefs.SetString(NowDataNumberScript.nowSaveData + "worldName","MAP:" + MapNumberManager.mapNumber_X + MapNumberManager.mapNumber_Y);
+			PlayerPrefs.SetString(NowDataNumberScript.nowSaveData + "worldName", mapName);
 			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "FUEL_01", FUELScript.getFUEL_01);
 			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "FUEL_02", FUELScript.getFUEL_02);
 			PlayerPrefs.SetInt(NowDataNumberScript.nowSaveData + "FUEL_03", FUELScript.getFUEL_03);
