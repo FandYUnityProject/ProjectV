@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9541192}
   - 50: {fileID: 5017300}
   - 61: {fileID: 6138844}
+  - 61: {fileID: 6137622}
   - 114: {fileID: 11486074}
   - 114: {fileID: 11483068}
   - 114: {fileID: 11431864}
@@ -92,6 +93,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: .673858643}
   serializedVersion: 2
   m_Size: {x: 1.34000003, y: 2.5722692}
+--- !u!61 &6137622
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131782}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: .673858643}
+  serializedVersion: 2
+  m_Size: {x: 1.34000003, y: 2.5722692}
 --- !u!61 &6138844
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -145,10 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d85a4d73c680a43aa5a6709283b8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGravityInversion: 0
   Gravityparameta: {x: 0, y: 30}
-  positivePlayerScale_Y: 1
-  negativePlayerScale_Y: -1
 --- !u!114 &11486074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,9 +172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: .150000006
-  scale: {x: 0, y: 0}
-  positivePlayerScale_X: 1
-  negativePlayerScale_X: -1
 --- !u!212 &21289468
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -200,22 +208,6 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: positivePlayerScale_Y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: negativePlayerScale_Y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: positivePlayerScale_X
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: negativePlayerScale_X
-      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

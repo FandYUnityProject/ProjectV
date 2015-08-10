@@ -11,7 +11,7 @@ public class ChikuwaBlockScript : MonoBehaviour {
 	float fadeOutTime  		= 1.0f;	// 消滅するまでの時間
 	float fadeOutWaitTime	= 0.9f;	// 消滅開始するまでの時間
 	float fadeOutSpeed      = 0.05f; // 消滅時間の調整
-	float remakeTime   		= 2.5f;	// 復活するまでの時間
+	float remakeTime   		= 1.5f;	// 復活するまでの時間
 	float currentRemainTime;		// 消滅するまでの残り時間を保持
 	float currentRemakeTime;		// 復活するまでの残り時間を保持
 	bool  isChikuwaHit    = false;	// スプライトに触れたかどうか
