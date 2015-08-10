@@ -4,24 +4,20 @@ using System.Collections;
 public class SaveScript : MonoBehaviour {
 
 	public string mapName;
+	private AudioSource av;
 
 	// Use this for initialization
 	void Start () {
+		av = GetComponent<AudioSource> ();
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 	
 	void OnTriggerEnter2D(Collider2D coll){
 
 		if (coll.gameObject.tag == "Player") {
 			
 			Debug.Log ("Save");
-
+			av.Play();
 			// プレイヤーに触れたら、現在のデータをセーブする
 			Debug.Log("mapNumber_XY: " + NowDataNumberScript.nowSaveData + "MAP" + MapNumberManager.mapNumber_X + MapNumberManager.mapNumber_Y);
 			

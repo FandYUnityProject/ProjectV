@@ -9,11 +9,13 @@ public class MoveController : MonoBehaviour {
 	private Animator anim;
 	private bool isMove = false;
 	private Transform playerTransform;
+	private AudioSource av;
 
 	void Start(){
 		//rb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		playerTransform = GetComponent<Transform> ();
+		av = GetComponent<AudioSource> ();
 	}
 
 	void Update(){
@@ -44,5 +46,11 @@ public class MoveController : MonoBehaviour {
 		Vector2 movement = new Vector2(horizontalMove,0).normalized;
 		//rb.velocity = movement * speed;
 		transform.Translate(movement * speed);
+	}
+
+	void OnCollisionEnter2D(Collision2D coll){
+		if (coll.gameObject) {
+			av.Play ();
+		}
 	}
 }

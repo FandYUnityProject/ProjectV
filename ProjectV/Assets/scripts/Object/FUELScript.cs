@@ -16,6 +16,7 @@ public class FUELScript : MonoBehaviour {
 	private GameObject Gate01;
 	private GameObject Gate02;
 	private GameObject AllSaveObject;
+	private AudioSource av;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +24,7 @@ public class FUELScript : MonoBehaviour {
 		Gate01 = GameObject.Find ("Gate01");
 		Gate02 = GameObject.Find ("Gate02");
 		AllSaveObject = GameObject.Find ("Savers");
+		av = GetComponent<AudioSource> ();
 
 		// Debug用
 		// PlayerPrefs.SetInt (NowDataNumberScript.nowSaveData + "FUEL_06", 1);
@@ -56,6 +58,9 @@ public class FUELScript : MonoBehaviour {
 
 		if (coll.gameObject.tag == "Player") {
 
+			av.Play();
+
+			Debug.Log(av.isPlaying);
 			if( this.name == "FUEL_01" ){ getFUEL_01 = 1; }
 			if( this.name == "FUEL_02" ){ getFUEL_02 = 1; }
 			if( this.name == "FUEL_03" ){ getFUEL_03 = 1; }

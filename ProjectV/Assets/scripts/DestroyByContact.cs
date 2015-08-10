@@ -22,13 +22,13 @@ public class DestroyByContact : MonoBehaviour {
 
 		
 		rb = GetComponent<Rigidbody2D> ();
+
 	}
 
 
 	void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject.tag == "KillObject") {
 			// Destroy (gameObject);
-			
 			// 再開時のマップ番地に応じてSpawn場所を変更
 			playerSpawnPoint.transform.position = new Vector2 (PlayerPrefs.GetFloat (NowDataNumberScript.nowSaveData + "mapNumber_X")
 		                                                  , PlayerPrefs.GetFloat (NowDataNumberScript.nowSaveData + "mapNumber_Y"));

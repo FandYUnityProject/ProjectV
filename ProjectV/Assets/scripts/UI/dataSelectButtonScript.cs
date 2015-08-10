@@ -4,8 +4,12 @@ using UnityEngine.UI;
 
 public class dataSelectButtonScript : MonoBehaviour {
 
+	private AudioSource av;
+
 	// Use this for initialization
 	void Start () {
+
+		av = GetComponent<AudioSource> ();
 
 		//--- データ選択ボタン内のテキストを変更 ---//
 		Text worldName  = GameObject.Find ("UI/" + this.name + "/DataContents01").GetComponent<Text> ();
@@ -61,6 +65,8 @@ public class dataSelectButtonScript : MonoBehaviour {
 
 	// ボタンをクリックするとゲームシーンへ移動する
 	public void OnClick() {
+
+		av.Play ();
 
 		NowDataNumberScript.nowSaveData = this.name;
 

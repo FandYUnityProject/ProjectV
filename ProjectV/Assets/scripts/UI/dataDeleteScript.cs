@@ -7,8 +7,11 @@ public class dataDeleteScript : MonoBehaviour {
 	dataSelectButtonScript dataSelectButton;
 	string dataNumberName;
 
+	private AudioSource av;
+
 	// Use this for initialization
 	void Start () {
+		av = GetComponent<AudioSource> ();
 	
 		dataSelectButton = dataButtonObject.GetComponent<dataSelectButtonScript> ();
 	}
@@ -20,7 +23,7 @@ public class dataDeleteScript : MonoBehaviour {
 
 	// ボタンをクリックするとゲームシーンへ移動する
 	public void OnClick() {
-		
+		av.Play ();
 		if( this.name == "Delete01" ){ dataNumberName = "Data01"; }
 		if( this.name == "Delete02" ){ dataNumberName = "Data02"; }
 		if( this.name == "Delete03" ){ dataNumberName = "Data03"; }
