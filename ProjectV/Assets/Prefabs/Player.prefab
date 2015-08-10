@@ -159,7 +159,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d85a4d73c680a43aa5a6709283b8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGravityInversion: 0
   Gravityparameta: {x: 0, y: 30}
+  positivePlayerScale_Y: 1
+  negativePlayerScale_Y: -1
 --- !u!114 &11486074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -208,6 +211,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: positivePlayerScale_Y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: negativePlayerScale_Y
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
