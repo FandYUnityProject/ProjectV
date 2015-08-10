@@ -9,9 +9,6 @@ public class MoveController : MonoBehaviour {
 	private Animator anim;
 	private bool isMove = false;
 	private Transform playerTransform;
-	public Vector2 scale;//= playerTransform.localScale;
-	public float positivePlayerScale_X;
-	public float negativePlayerScale_X;
 
 	void Start(){
 		//rb = GetComponent<Rigidbody2D> ();
@@ -21,14 +18,14 @@ public class MoveController : MonoBehaviour {
 
 	void Update(){
 		float horizontalMove = Input.GetAxisRaw ("Horizontal");
-		scale = playerTransform.localScale;
+		Vector2 scale = playerTransform.localScale;
 
 		if (horizontalMove > 0f) {
 			isMove = true;
-			scale.x = negativePlayerScale_X;
+			scale.x = -1f;
 		} else if (horizontalMove < 0f) {
 			isMove = true;
-			scale.x = positivePlayerScale_X;
+			scale.x = 1f;
 		} else {
 			isMove =false;
 		}
