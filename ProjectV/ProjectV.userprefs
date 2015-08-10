@@ -1,58 +1,35 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/DestroyByContact.cs">
-=======
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WarpByTouch.cs">
-=======
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/moveMapRockman.cs">
->>>>>>> origin/master
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GravityInversion2D.cs">
     <Files>
       <File FileName="Assets/scripts/Setting/SaveData/SaveData.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Setting/Sound/SoundScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/UI/dataSelectButtonScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/moveMapRockman.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/WarpByTouch.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/MoveController.cs" Line="45" Column="27" />
-      <File FileName="Assets/scripts/Object/ChikuwaBlockScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/MoveController.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Object/ChikuwaBlockScript.cs" Line="14" Column="26" />
       <File FileName="Assets/scripts/Object/FUELScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Setting/SaveData/NowDataNumberScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/UI/dataDeleteScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/MapNumberManager.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Object/SaveScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Saver.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/DestroyByContact.cs" Line="5" Column="2" />
-      <File FileName="Assets/scripts/GravityInversion2D.cs" Line="50" Column="3" />
+      <File FileName="Assets/scripts/DestroyByContact.cs" Line="5" Column="1" />
+      <File FileName="Assets/scripts/GravityInversion2D.cs" Line="54" Column="53" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="scripts" expanded="True">
-              <Node name="DestroyByContact.cs" selected="True" />
+              <Node name="Object" expanded="True" />
+              <Node name="GravityInversion2D.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
-<<<<<<< HEAD
-=======
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GravityInversion2D.cs">
->>>>>>> origin/master
-    <Files>
-      <File FileName="Assets\Scripts\GravityInversion2D.cs" Line="56" Column="35" />
-      <File FileName="Assets\Scripts\Object\SaveScript.cs" Line="16" Column="3" />
-      <File FileName="Assets\Scripts\MoveController.cs" Line="31" Column="35" />
-      <File FileName="Assets\Scripts\WarpByTouch.cs" Line="1" Column="1" />
-    </Files>
->>>>>>> origin/master
->>>>>>> origin/master
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

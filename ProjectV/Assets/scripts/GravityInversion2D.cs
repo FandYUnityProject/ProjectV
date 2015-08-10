@@ -15,6 +15,8 @@ public class GravityInversion2D : MonoBehaviour {
 	public Vector2 Gravityparameta = new Vector2(0,20);
 	public float positivePlayerScale_Y;
 	public float negativePlayerScale_Y;
+
+	bool isTouch;
 	
 	// Update is called once per frame
 	void Update () {
@@ -34,16 +36,11 @@ public class GravityInversion2D : MonoBehaviour {
 
 	public void OnTriggerExit2D(Collider2D coll){
 		Vector2 scale = transform.localScale;
-<<<<<<< HEAD
 		if (coll.gameObject.tag == "Floor" && isTouch) {
 			scale.y = negativePlayerScale_Y;
-=======
-		if (coll.gameObject.tag == "Floor") {
 			scale.y = -1;
->>>>>>> origin/master
 			transform.localScale = scale;
 		}
-<<<<<<< HEAD
 		if (coll.gameObject.tag == "Roof" && isTouch) {
 			scale.y = positivePlayerScale_Y;
 			transform.localScale = scale;
@@ -60,11 +57,6 @@ public class GravityInversion2D : MonoBehaviour {
 		if (coll.gameObject.tag == "Roof" && !isTouch) {
 			scale.y = negativePlayerScale_Y;
 			transform.localScale = scale;
-=======
-		if (coll.gameObject.tag == "Roof") {
-			scale.y = 1;
-			transform.localScale = scale;
->>>>>>> origin/master
 		}
 	}
 
