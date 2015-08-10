@@ -10,7 +10,12 @@ using System.Collections;
 public class GravityInversion2D : MonoBehaviour {
 
 	public static bool isGravity = true;
+<<<<<<< HEAD
 	bool isGravityInversion = false;	// 重力反転中か（接地するまで重力反転は１度のみ）
+=======
+	public bool isGravityInversion = false;	// 重力反転中か（接地するまで重力反転は１度のみ）
+	bool isTouch = false;
+>>>>>>> origin/master
 	public Vector2 Gravityparameta = new Vector2(0,20);
 	
 	// Update is called once per frame
