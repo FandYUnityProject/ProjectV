@@ -1,6 +1,11 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GoalScript.cs">
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GravityInversion2D.cs">
+>>>>>>> origin/master
     <Files>
       <File FileName="Assets/scripts/GoalScript.cs" Line="4" Column="1" />
       <File FileName="Assets/scripts/BombTimer.cs" Line="30" Column="42" />
