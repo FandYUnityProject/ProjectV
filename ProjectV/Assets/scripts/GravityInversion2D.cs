@@ -32,7 +32,7 @@ public class GravityInversion2D : MonoBehaviour {
 
 	}
 
-	public void OnTriggerExit2D(Collider2D coll){
+	/*public void OnTriggerExit2D(Collider2D coll){
 		Vector2 scale = transform.localScale;
 
 		if (coll.gameObject.tag == "Floor") {
@@ -57,7 +57,7 @@ public class GravityInversion2D : MonoBehaviour {
 			scale.y = negativePlayerScale_Y;
 			transform.localScale = scale;
 		}
-	}
+	}*/
 
 	/// <summary>
 	/// 接触した（=着地）
