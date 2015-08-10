@@ -21,6 +21,7 @@ public class MapNumberManager : MonoBehaviour {
 		
 		// 再開時のマップ番地に応じてSpawn場所を変更
 		playerSpawnPoint = GameObject.Find ("PlayerSpawnPoint");
+		// デバッグ時はコメント化する
 		playerSpawnPoint.transform.position = new Vector2(mapNumber_X, mapNumber_Y);
 
 		// Playerオブジェクトを取得

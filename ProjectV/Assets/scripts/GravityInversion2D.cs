@@ -10,8 +10,12 @@ using System.Collections;
 public class GravityInversion2D : MonoBehaviour {
 
 	public static bool isGravity = true;
+<<<<<<< HEAD
+	bool isGravityInversion = false;	// 重力反転中か（接地するまで重力反転は１度のみ）
+=======
 	public bool isGravityInversion = false;	// 重力反転中か（接地するまで重力反転は１度のみ）
 	bool isTouch = false;
+>>>>>>> origin/master
 	public Vector2 Gravityparameta = new Vector2(0,20);
 	public float positivePlayerScale_Y;
 	public float negativePlayerScale_Y;
@@ -34,11 +38,16 @@ public class GravityInversion2D : MonoBehaviour {
 
 	public void OnTriggerExit2D(Collider2D coll){
 		Vector2 scale = transform.localScale;
+<<<<<<< HEAD
 		if (coll.gameObject.tag == "Floor" && isTouch) {
 			scale.y = negativePlayerScale_Y;
+=======
+		if (coll.gameObject.tag == "Floor") {
+			scale.y = -1;
+>>>>>>> origin/master
 			transform.localScale = scale;
-			isTouch = false;
 		}
+<<<<<<< HEAD
 		if (coll.gameObject.tag == "Roof" && isTouch) {
 			scale.y = positivePlayerScale_Y;
 			transform.localScale = scale;
@@ -55,6 +64,11 @@ public class GravityInversion2D : MonoBehaviour {
 		if (coll.gameObject.tag == "Roof" && !isTouch) {
 			scale.y = negativePlayerScale_Y;
 			transform.localScale = scale;
+=======
+		if (coll.gameObject.tag == "Roof") {
+			scale.y = 1;
+			transform.localScale = scale;
+>>>>>>> origin/master
 		}
 	}
 
@@ -65,7 +79,6 @@ public class GravityInversion2D : MonoBehaviour {
 	public void OnCollisionEnter2D(Collision2D coll)
 	{
 		isGravityInversion    = false;
-		isTouch = true;
 
 		// 接触した物体タグ>が”gravityInversionObject”(重力反転装置)なら重力反転
 		if (coll.gameObject.tag == "gravityInversionObject") {
