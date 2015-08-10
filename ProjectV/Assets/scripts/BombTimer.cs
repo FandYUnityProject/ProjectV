@@ -11,6 +11,8 @@ public class BombTimer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
+		FUELScript.isBomb = false;
+		Timer = 60.0f;
 	}
 	
 	// Update is called once per frame

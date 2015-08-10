@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/_Scene/GameSelect.unity
   - enabled: 1
     path: Assets/_Scene/Level01.unity
+  - enabled: 1
+    path: Assets/_Scene/GameClear.unity
