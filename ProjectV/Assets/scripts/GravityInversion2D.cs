@@ -13,6 +13,8 @@ public class GravityInversion2D : MonoBehaviour {
 	public bool isGravityInversion = false;	// 重力反転中か（接地するまで重力反転は１度のみ）
 	bool isTouch = false;
 	public Vector2 Gravityparameta = new Vector2(0,20);
+	public float positivePlayerScale_Y;
+	public float negativePlayerScale_Y;
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,12 +35,12 @@ public class GravityInversion2D : MonoBehaviour {
 	public void OnTriggerExit2D(Collider2D coll){
 		Vector2 scale = transform.localScale;
 		if (coll.gameObject.tag == "Floor" && isTouch) {
-			scale.y = -1;
+			scale.y = negativePlayerScale_Y;
 			transform.localScale = scale;
 			isTouch = false;
 		}
 		if (coll.gameObject.tag == "Roof" && isTouch) {
-			scale.y = 1;
+			scale.y = positivePlayerScale_Y;
 			transform.localScale = scale;
 			isTouch = false;
 		}
@@ -47,11 +49,11 @@ public class GravityInversion2D : MonoBehaviour {
 	public void OnTriggerEnter2D(Collider2D coll){
 		Vector2 scale = transform.localScale;
 		if (coll.gameObject.tag == "Floor" && !isTouch) {
-			scale.y = 1;
+			scale.y = positivePlayerScale_Y;
 			transform.localScale = scale;
 		}
 		if (coll.gameObject.tag == "Roof" && !isTouch) {
-			scale.y = -1;
+			scale.y = negativePlayerScale_Y;
 			transform.localScale = scale;
 		}
 	}
