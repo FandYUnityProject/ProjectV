@@ -1,20 +1,8 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GravityInversion2D.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/moveMapRockman.cs">
     <Files>
-      <File FileName="Assets\Scripts\GravityInversion2D.cs" Line="47" Column="24" />
-      <File FileName="Assets\Scripts\MoveController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\WarpByTouch.cs" Line="22" Column="44" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Object/SaveScript.cs">
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/MapNumberManager.cs">
->>>>>>> origin/master
-    <Files>
-      <File FileName="Assets/scripts/Setting/SaveData/SaveData.cs" Line="20" Column="1" />
+      <File FileName="Assets/scripts/Setting/SaveData/SaveData.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Setting/Sound/SoundScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/UI/dataSelectButtonScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/moveMapRockman.cs" Line="1" Column="1" />
@@ -24,35 +12,18 @@
       <File FileName="Assets/scripts/Object/FUELScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Setting/SaveData/NowDataNumberScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/UI/dataDeleteScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/MapNumberManager.cs" Line="43" Column="17" />
-      <File FileName="Assets/scripts/Object/SaveScript.cs" Line="30" Column="80" />
+      <File FileName="Assets/scripts/MapNumberManager.cs" Line="25" Column="3" />
+      <File FileName="Assets/scripts/Object/SaveScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/Saver.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/DestroyByContact.cs" Line="29" Column="125" />
-<<<<<<< HEAD
-      <File FileName="Assets/scripts/GravityInversion2D.cs" Line="12" Column="30" />
->>>>>>> origin/master
-=======
-      <File FileName="Assets/scripts/GravityInversion2D.cs" Line="35" Column="17" />
->>>>>>> origin/master
+      <File FileName="Assets/scripts/GravityInversion2D.cs" Line="50" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="scripts" expanded="True">
-<<<<<<< HEAD
-              <Node name="Object" expanded="True">
-                <Node name="SaveScript.cs" selected="True" />
-              </Node>
-<<<<<<< HEAD
-              <Node name="UI" expanded="True" />
-              <Node name="GravityInversion2D.cs" selected="True" />
-=======
->>>>>>> origin/master
-=======
-              <Node name="Object" expanded="True" />
-              <Node name="MapNumberManager.cs" selected="True" />
->>>>>>> origin/master
+              <Node name="moveMapRockman.cs" selected="True" />
             </Node>
           </Node>
         </State>

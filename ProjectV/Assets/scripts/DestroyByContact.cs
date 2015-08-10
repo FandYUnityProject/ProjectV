@@ -10,6 +10,8 @@ public class DestroyByContact : MonoBehaviour {
 	// playerオブジェクト
 	private GameObject playerObject;
 
+	private Rigidbody2D rb;
+
 	void Start(){
 		
 		// Spawnオブジェクトを取得
@@ -17,6 +19,9 @@ public class DestroyByContact : MonoBehaviour {
 		
 		// Playerオブジェクトを取得
 		playerObject = GameObject.FindGameObjectWithTag ("Player");
+
+		
+		rb = GetComponent<Rigidbody2D> ();
 	}
 
 
@@ -27,7 +32,10 @@ public class DestroyByContact : MonoBehaviour {
 			// 再開時のマップ番地に応じてSpawn場所を変更
 			playerSpawnPoint.transform.position = new Vector2 (PlayerPrefs.GetFloat (NowDataNumberScript.nowSaveData + "mapNumber_X")
 		                                                  , PlayerPrefs.GetFloat (NowDataNumberScript.nowSaveData + "mapNumber_Y"));
-			
+
+			Vector2 movement = new Vector2(0,0).normalized;
+			rb.velocity = movement;
+
 			// spawnPointに応じて開始地点にPlayer配置
 			playerObject.transform.position = playerSpawnPoint.transform.position;
 			
