@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: .150000006
+  TouchSounds: {fileID: 8300000, guid: 31bbb30384488a0488b310bc1215bb83, type: 3}
   DamageClip: {fileID: 8300000, guid: 47deda90a32d56d41b38fe4b6d2cb955, type: 3}
   GetFuelClip: {fileID: 8300000, guid: 0b2d114fd28027c4987d3cea256a1867, type: 3}
 --- !u!212 &21289468
