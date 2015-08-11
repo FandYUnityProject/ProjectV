@@ -10,8 +10,7 @@ public class MoveController : MonoBehaviour {
 	private bool isMove = false;
 	private Transform playerTransform;
 	private AudioSource av;
-	
-	public AudioClip TouchSounds;
+
 	public AudioClip DamageClip;
 	public AudioClip GetFuelClip;
 
@@ -54,7 +53,6 @@ public class MoveController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject) {
-			av.clip = TouchSounds;
 			av.Play ();
 		}
 		if (coll.gameObject.tag == "KillObject") {
