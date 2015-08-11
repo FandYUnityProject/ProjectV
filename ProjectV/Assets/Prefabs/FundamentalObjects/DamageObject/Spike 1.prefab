@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 409226}
   - 212: {fileID: 21204120}
   - 60: {fileID: 6076576}
-  - 114: {fileID: 11495672}
   - 82: {fileID: 8293046}
   m_Layer: 0
   m_Name: Spike 1
@@ -118,17 +117,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11495672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9b4c2e39ae0c3c45912a1b4d872f66b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &21204120
 SpriteRenderer:
   m_ObjectHideFlags: 1
