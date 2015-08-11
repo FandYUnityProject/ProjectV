@@ -1,47 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-<<<<<<< Updated upstream
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MoveController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/MoveController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Object\SaveScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MoveController.cs" Line="58" Column="35" />
-      <File FileName="Assets\Scripts\Object\FUELScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\AudioController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\DestroyByContact.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GravityInversion2D.cs" Line="14" Column="1" />
-      <File FileName="Assets\DamageByContact.cs" Line="12" Column="35" />
-      <File FileName="..\..\..\3DSurvival\Assets\Scripts\Player\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\3DSurvival\Assets\Scripts\Player\PlayerShooting.cs" Line="6" Column="45" />
-      <File FileName="..\..\..\3DSurvival\Assets\Scripts\Player\PlayerHealth.cs" Line="9" Column="32" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Object/FUELScript.cs">
-    <Files>
-      <File FileName="Assets/scripts/GoalScript.cs" Line="19" Column="37" />
-      <File FileName="Assets/scripts/BombTimer.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/Saver.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/Object/SaveScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/Object/FUELScript.cs" Line="72" Column="6" />
->>>>>>> Stashed changes
+      <File FileName="Assets/scripts/MoveController.cs" Line="57" Column="26" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-<<<<<<< Updated upstream
-            <Node name="Scripts" expanded="True">
-              <Node name="Object" expanded="True" />
-              <Node name="MoveController.cs" selected="True" />
-=======
-            <Node name="scripts" expanded="True">
-              <Node name="Object" expanded="True">
-                <Node name="FUELScript.cs" selected="True" />
-              </Node>
->>>>>>> Stashed changes
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
