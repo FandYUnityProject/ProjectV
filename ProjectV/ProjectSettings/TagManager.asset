@@ -9,6 +9,7 @@ TagManager:
   - KillObject
   - gravityInversionObject
   - Ground
+  - Fuel
   layers:
   - Default
   - TransparentFX

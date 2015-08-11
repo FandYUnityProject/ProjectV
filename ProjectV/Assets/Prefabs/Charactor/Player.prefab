@@ -245,6 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: .150000006
+  DamageClip: {fileID: 8300000, guid: 47deda90a32d56d41b38fe4b6d2cb955, type: 3}
+  GetFuelClip: {fileID: 8300000, guid: 0b2d114fd28027c4987d3cea256a1867, type: 3}
 --- !u!212 &21289468
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -290,6 +292,14 @@ Prefab:
       propertyPath: negativePlayerScale_Y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: DamageClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 47deda90a32d56d41b38fe4b6d2cb955, type: 3}
+    - target: {fileID: 0}
+      propertyPath: GetFuelClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b2d114fd28027c4987d3cea256a1867, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 131782}

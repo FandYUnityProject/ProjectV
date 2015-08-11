@@ -11,6 +11,9 @@ public class MoveController : MonoBehaviour {
 	private Transform playerTransform;
 	private AudioSource av;
 
+	public AudioClip DamageClip;
+	public AudioClip GetFuelClip;
+
 	void Start(){
 		//rb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
@@ -51,6 +54,17 @@ public class MoveController : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject) {
 			av.Play ();
+		}
+		if (coll.gameObject.tag == "KillObject") {
+			av.clip = DamageClip;
+			av.Play();
+		}
+	}
+
+	void OnTirrigerEnter2D(Collision2D coll){
+		if (coll.gameObject.tag == "Fuel") {
+			av.clip = GetFuelClip;
+			av.Play();
 		}
 	}
 }
