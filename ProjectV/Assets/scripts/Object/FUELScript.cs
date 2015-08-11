@@ -69,7 +69,7 @@ public class FUELScript : MonoBehaviour {
 			if( this.name == "FUEL_06" ){ getFUEL_06 = 1; }
 			if( this.name == "FUEL_07" ){ getFUEL_07 = 1; }
 
-			GameObject.Destroy(gameObject);
+			//GameObject.Destroy(gameObject);
 
 			if( getFUEL_01==1 && getFUEL_02==1 && getFUEL_03==1 && getFUEL_04==1 && getFUEL_05==1 && getFUEL_06==1 ){
 
